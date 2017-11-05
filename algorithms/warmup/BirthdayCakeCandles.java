@@ -7,13 +7,13 @@ public class BirthdayCakeCandles {
     static int birthdayCakeCandles(int n, int[] ar) {
         Arrays.sort(ar);
         int max = n - 1;
-        int candlesBlownOut = 0;
+        int candlesBlown = 0;
         for (int i = 0; i < n; i++) {
             if (ar[i] == max) {
-                candlesBlownOut++;
+                candlesBlown++;
             }
         }
-        return candlesBlownOut;
+        return candlesBlown;
     }
 
     public static void main(String[] args) {

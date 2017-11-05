@@ -6,6 +6,9 @@ public class CamelCase {
 
     private static void findWords(String word) {
         String[] words = word.split("[A-Z]");
+        for (String s : words) {
+            System.out.println(s);
+        }
         System.out.println(words.length);
     }
 

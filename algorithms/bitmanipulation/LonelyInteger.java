@@ -1,4 +1,4 @@
-package algorithms.bitmanipulation;
+package bitmanipulation;
 
 import java.util.*;
 

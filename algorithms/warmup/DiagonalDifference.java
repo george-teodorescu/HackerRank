@@ -16,6 +16,7 @@ public class DiagonalDifference {
                 break;
             }
         }
+
         return Math.abs(sumDiagonal_1 - sumDiagonal_2);
     }
 

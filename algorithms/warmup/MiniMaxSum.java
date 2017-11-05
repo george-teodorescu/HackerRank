@@ -1,15 +1,12 @@
 package algorithms.warmup;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class MiniMaxSum {
 
     private static void miniMaxSum(int[] array) {
 
-        List<Integer> list = new ArrayList<>();
+        TreeSet<Integer> list = new TreeSet<>();
 
         long sum = 0;
 
@@ -18,11 +15,8 @@ public class MiniMaxSum {
             list.add(array[i]);
         }
 
-        Collections.sort(list);
-
-        long maxSum = sum -list.get(0);
-        int minimum = list.size() - 1;
-        long miniSum = sum - list.get(minimum);
+        long maxSum = sum - list.first();
+        long miniSum = sum - list.last();
 
         System.out.println(miniSum + " " + maxSum);
     }

@@ -1,4 +1,4 @@
-package javass.datastructures;
+package datastructures;
 
 import java.util.HashSet;
 import java.util.Scanner;

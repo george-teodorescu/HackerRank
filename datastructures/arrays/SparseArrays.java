@@ -1,4 +1,4 @@
-package datastructures.arrays;
+package arrays;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,6 @@ public class SparseArrays {
                 }
             }
             System.out.println(count);
-            count = 0;
         }
     }
 

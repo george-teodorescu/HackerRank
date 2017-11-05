@@ -1,4 +1,4 @@
-package javass.datastructures;
+package datastructures;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -6,19 +6,11 @@ public class Kangaroo {
 
     static String kangaroo(int x1, int v1, int x2, int v2) {
 
-        while (x1 != x2) {
-            x1 += v1;
-            x2 += v2;
-        }
-
-        int temp1 = x1 + v1;
-        int temp2 = x2 + v2;
-        int diff = Math.abs(temp1 - temp2);
-        if (Math.abs(x1 - x2) < diff) {
+        if (v1 > v2 && ((x2 - x1) % (v1 - v2) == 0)) {
             return "YES";
         }
-         return "NO";
-        }
+        return "NO";
+    }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -30,5 +22,3 @@ public class Kangaroo {
         System.out.println(result);
     }
 }
-
-// 28 8 96 2
