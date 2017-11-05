@@ -29,3 +29,4 @@ public class CaesarCypher {
         return (char)((c + k - base) % 26 + base);
     }
 }
+

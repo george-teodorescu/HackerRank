@@ -18,7 +18,7 @@ public class JavaDataTypes {
                 if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE)System.out.println("* int");
                 if (x >= Long.MIN_VALUE && x <= Long.MAX_VALUE) System.out.println("* long");
                 } catch (InputMismatchException ex) {
-                        System.out.println();
+                        System.out.println(sc.next() + " can't be fitter anywhere.");
                     }
             }
         }

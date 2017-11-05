@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class JavaStringReverse {
 
     public static void checkPalindrome(String s) {
-        StringBuffer word = new StringBuffer(s);
-        word.reverse();
-        if (s.equals(word.toString())) {
+        StringBuffer sb = new StringBuffer(s);
+        sb.reverse();
+        if (s.equals(sb.toString())) {
             System.out.println("Yes");
         } else {
             System.out.println("No");

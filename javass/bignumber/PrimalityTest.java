@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PrimalityTest {
 
     private static String checkPrimeNumber(java.math.BigInteger n) {
-        boolean flag = n.isProbablePrime(1);
+        boolean flag = n.isProbablePrime(100);
         if (flag) {
             return "prime";
         }
