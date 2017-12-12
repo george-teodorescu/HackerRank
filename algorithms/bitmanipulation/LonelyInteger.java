@@ -1,11 +1,12 @@
 package bitmanipulation;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class LonelyInteger {
     public static void main(String[] args) {
-
-        //option 1
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 1, 2, 4, 5, 5);
         Map<Integer, Integer> numbersMap = new HashMap<>();
@@ -24,25 +25,6 @@ public class LonelyInteger {
                 System.out.println(key);
             }
         }
-
-        //option 2
-
-//        List<Integer> numbers = Arrays.asList(1, 2, 3, 1, 2, 4, 5, 5);
-//        List<Integer> uniqueNumbers = new ArrayList<>();
-//        uniqueNumbers.addAll(numbers);
-//
-//        for (Integer i = 0; i < numbers.size() - 1; i++) {
-//            for (Integer j = 1 + i; j < numbers.size(); j++) {
-//                if (i == j) {
-//                    continue;
-//                }
-//                if (numbers.get(i) == numbers.get(j)) {
-//                    uniqueNumbers.remove(numbers.get(i));
-//                    uniqueNumbers.remove(numbers.get(j));
-//                }
-//            }
-//        }
-//        System.out.println(uniqueNumbers);
     }
 }
 
